@@ -49,3 +49,10 @@ next-env.d.ts
 # database
 /prisma/dev.db
 /prisma/dev.db-journal
+
+# sensitive / local config
+.claude/settings.local.json
+firebase-debug.log
+.playwright-mcp/
+logs.txt
+*.log

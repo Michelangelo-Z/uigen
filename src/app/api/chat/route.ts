@@ -48,9 +48,6 @@ export async function POST(req: Request) {
     messages,
     maxTokens: 10_000,
     maxSteps: isMockProvider ? 4 : 40,
-    onError: (err: any) => {
-      console.error(err);
-    },
     tools: {
       str_replace_editor: buildStrReplaceTool(fileSystem),
       file_manager: buildFileManagerTool(fileSystem),
